@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2023_11_03_160517) do
+ActiveRecord::Schema[7.1].define(version: 2023_11_03_190152) do
   create_table "items", force: :cascade do |t|
     t.string "name"
     t.integer "list_id", null: false
@@ -25,6 +25,14 @@ ActiveRecord::Schema[7.1].define(version: 2023_11_03_160517) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "microitems", force: :cascade do |t|
+    t.string "name"
+    t.integer "subitem_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["subitem_id"], name: "index_microitems_on_subitem_id"
+  end
+
   create_table "subitems", force: :cascade do |t|
     t.string "name"
     t.integer "item_id", null: false
@@ -34,5 +42,6 @@ ActiveRecord::Schema[7.1].define(version: 2023_11_03_160517) do
   end
 
   add_foreign_key "items", "lists"
+  add_foreign_key "microitems", "subitems"
   add_foreign_key "subitems", "items"
 end
