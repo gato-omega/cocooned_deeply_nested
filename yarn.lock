@@ -188,6 +188,11 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
+"@notus.sh/cocooned@^2.0.3":
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/@notus.sh/cocooned/-/cocooned-2.0.3.tgz#55e025a286b50101b7c84f5128ec91f25271d51a"
+  integrity sha512-tha4TrIUIWEFaKFAAbJwAIEuIOEtLAZLcrono6Bkb8O+WH6M3Jt/veu3U+D3tOdVRgMwy2GlSDjE1/e+nIZ84w==
+
 "@rails/actioncable@^7.0":
   version "7.1.1"
   resolved "https://registry.yarnpkg.com/@rails/actioncable/-/actioncable-7.1.1.tgz#e8c49769d41f35a4473133c259cc98adc04dddf8"
