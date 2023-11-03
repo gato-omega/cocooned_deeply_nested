@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @subitem %>
+
+<div>
+  <%= link_to "Edit this subitem", edit_subitem_path(@subitem) %> |
+  <%= link_to "Back to subitems", subitems_path %>
+
+  <%= button_to "Destroy this subitem", @subitem, method: :delete %>
+</div>

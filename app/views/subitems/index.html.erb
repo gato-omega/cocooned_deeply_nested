@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Subitems</h1>
+
+<div id="subitems">
+  <% @subitems.each do |subitem| %>
+    <%= render subitem %>
+    <p>
+      <%= link_to "Show this subitem", subitem %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New subitem", new_subitem_path %>
