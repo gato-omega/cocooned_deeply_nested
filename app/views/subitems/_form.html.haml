@@ -1,0 +1,16 @@
+= form_for @subitem do |f|
+  - if @subitem.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@subitem.errors.count, "error")} prohibited this subitem from being saved:"
+      %ul
+        - @subitem.errors.full_messages.each do |message|
+          %li= message
+
+  .field
+    = f.label :name
+    = f.text_field :name
+  .field
+    = f.label :item
+    = f.text_field :item
+  .actions
+    = f.submit 'Save'
