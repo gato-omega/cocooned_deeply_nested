@@ -16,78 +16,90 @@ list = List.new(
   items_attributes: [
     {
       name: 'AI1 (Item 1)',
+      position: 1,
       subitems_attributes: [
         {
           name: 'AI1S1 (Subitem 1-1)',
+          position: 1,
           microitems_attributes: [
-            { name: 'AI1S1M1 (Microitem 1-1-1)' },
-            { name: 'AI1S1M2 (Microitem 1-1-2)' },
+            { name: 'AI1S1M1 (Microitem 1-1-1)', position: 1 },
+            { name: 'AI1S1M2 (Microitem 1-1-2)', position: 2 },
           ]
         },
         {
           name: 'AI1S2 (Subitem 1-2)',
+          position: 2,
           microitems_attributes: [
-            { name: 'AI1S2M1 (Microitem 1-2-1)' },
-            { name: 'AI1S2M2 (Microitem 1-2-2)' },
+            { name: 'AI1S2M1 (Microitem 1-2-1)', position: 1 },
+            { name: 'AI1S2M2 (Microitem 1-2-2)', position: 2 },
           ]
         },
         {
           name: 'AI1S3 (Subitem 1-3)',
+          position: 3,
           microitems_attributes: [
-            { name: 'AI1S3M1 (Microitem 1-3-1)' },
-            { name: 'AI1S3M2 (Microitem 1-3-2)' },
+            { name: 'AI1S3M1 (Microitem 1-3-1)', position: 1 },
+            { name: 'AI1S3M2 (Microitem 1-3-2)', position: 2 },
           ]
         },
       ]
     },
     {
       name: 'AI2 (Item 2)',
+      position: 2,
       subitems_attributes: [
         {
           name: 'AI2S1 (Subitem 2-1)',
+          position: 1,
           microitems_attributes: [
-            { name: 'AI2S1M1 (Microitem 2-1-1)' },
-            { name: 'AI2S1M2 (Microitem 2-1-2)' },
+            { name: 'AI2S1M1 (Microitem 2-1-1)', position: 1 },
+            { name: 'AI2S1M2 (Microitem 2-1-2)', position: 2 },
           ]
         },
         {
           name: 'AI2S2 (Subitem 2-2)',
+          position: 2,
           microitems_attributes: [
-            { name: 'AI2S2M1 (Microitem 2-2-1)' },
-            { name: 'AI2S2M2 (Microitem 2-2-2)' },
+            { name: 'AI2S2M1 (Microitem 2-2-1)', position: 1 },
+            { name: 'AI2S2M2 (Microitem 2-2-2)', position: 2 },
           ]
         },
         {
           name: 'AI2S3 (Subitem 2-3)',
+          position: 3,
           microitems_attributes: [
-            { name: 'AI2S3M1 (Microitem 2-3-1)' },
-            { name: 'AI2S3M2 (Microitem 2-3-2)' },
+            { name: 'AI2S3M1 (Microitem 2-3-1)', position: 1 },
+            { name: 'AI2S3M2 (Microitem 2-3-2)', position: 2 },
           ]
         },
       ]
     },
     {
       name: 'AI3 (Item 3)',
+      position: 3,
       subitems_attributes: [
         {
           name: 'AI3S1 (Subitem 3-1)',
+          position: 1,
           microitems_attributes: [
-            { name: 'AI3S1M1 (Microitem 3-1-1)' },
-            { name: 'AI3S1M2 (Microitem 3-1-2)' },
+            { name: 'AI3S1M1 (Microitem 3-1-1)', position: 1 },
+            { name: 'AI3S1M2 (Microitem 3-1-2)', position: 2 },
           ]
         },
         {
           name: 'AI3S2 (Subitem 3-2)',
+          position: 2,
           microitems_attributes: [
-            { name: 'AI3S2M1 (Microitem 3-2-1)' },
-            { name: 'AI3S2M2 (Microitem 3-2-2)' },
+            { name: 'AI3S2M1 (Microitem 3-2-1)', position: 1 },
+            { name: 'AI3S2M2 (Microitem 3-2-2)', position: 2 },
           ]
         },
         {
           name: 'AI3S3 (Subitem 3-3)',
+          position: 3,
           microitems_attributes: [
-            { name: 'AI3S3M1 (Microitem 3-3-1)' },
-            { name: 'AI3S3M2 (Microitem 3-3-2)' },
+            { name: 'AI3S3M1 (Microitem 3-3-1)', position: 1 },
+            { name: 'AI3S3M2 (Microitem 3-3-2)', position: 2 },
           ]
         },
       ]

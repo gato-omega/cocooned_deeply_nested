@@ -9,7 +9,7 @@
   .field
     = f.label :name
     = f.text_field :name
-    = cocooned_container(data: { controller: 'cocooned' }) do
+    = cocooned_container(data: { controller: 'cocooned'}, reorderable: true) do
       = f.fields_for :items do |item|
         = render 'item_fields', f: item
       .add-item-link.text-blue-800.text-md
