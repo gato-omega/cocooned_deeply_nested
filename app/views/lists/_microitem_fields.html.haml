@@ -1,0 +1,7 @@
+= cocooned_item do
+  .m-2.p-2.ml-8.border-1.border.border-blue-300.flex.flex-row.items-center
+    = cocooned_remove_item_link f do
+      .text-red-300.text-sm= "Remove #{f.object.class.name.downcase}"
+
+    = f.label :name
+    = f.text_field :name

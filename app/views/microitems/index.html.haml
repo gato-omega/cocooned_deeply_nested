@@ -1,0 +1,23 @@
+%h1 Listing microitems
+
+%table
+  %thead
+    %tr
+      %th Name
+      %th Subitem
+      %th
+      %th
+      %th
+
+  %tbody
+    - @microitems.each do |microitem|
+      %tr
+        %td= microitem.name
+        %td= microitem.subitem
+        %td= link_to 'Show', microitem
+        %td= link_to 'Edit', edit_microitem_path(microitem)
+        %td= link_to 'Destroy', microitem, method: :delete, data: { confirm: 'Are you sure?' }
+
+%br
+
+= link_to 'New Microitem', new_microitem_path

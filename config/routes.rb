@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :microitems
   resources :subitems
   resources :items
   resources :lists

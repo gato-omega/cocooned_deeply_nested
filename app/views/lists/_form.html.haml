@@ -9,5 +9,10 @@
   .field
     = f.label :name
     = f.text_field :name
+    = cocooned_container(data: { controller: 'cocooned' }) do
+      = f.fields_for :items do |item|
+        = render 'item_fields', f: item
+      .add-item-link.text-blue-800.text-md
+        = cocooned_add_item_link 'Add Item', f, :items, partial: 'item_fields'
   .actions
     = f.submit 'Save'
