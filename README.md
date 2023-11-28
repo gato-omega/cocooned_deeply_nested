@@ -1,5 +1,8 @@
 # README
 
+*Note:* The current branch you are looking at (i.e. `cocooned-2.0.4`)
+has already fixed the original issue https://github.com/notus-sh/cocooned/issues/47. See the `main` branch for the original code before the fix where the issue presented itself.
+
 This app was built as a minimal reproducible example of deeply nested cocoons
 for usage with the cocooned gem and companion npm package from: https://github.com/notus-sh/cocooned/ when using with hotwired/stimulus and `esbuild`.
 
