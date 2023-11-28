@@ -4,7 +4,7 @@
       = cocooned_remove_item_link f do
         .text-red-500.text-sm= "Remove #{f.object.class.name.downcase}"
       
-      = f.hidden_field :position
+      = f.text_field :position
       = cocooned_move_item_up_link 'Up', f
       = cocooned_move_item_down_link 'Down', f
       
